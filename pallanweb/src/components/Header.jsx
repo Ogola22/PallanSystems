@@ -11,9 +11,10 @@ function Header() {
   return (
     <div className="navbar">
     {['sm'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3 mt-3 m-0">
+        <Navbar key={expand} bg="transparent" expand={expand} className="mb-3 mt-3 justify-content-center 
+        ">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Brand href="#">Pallan systems</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -22,18 +23,22 @@ function Header() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  Pallan
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <Nav.Link href="#action2">About</Nav.Link>
+                  <Nav.Link href="#action1">Business</Nav.Link>
+                  <Nav.Link href="#action1">Mission</Nav.Link>
+                  <Nav.Link href="#action1">Contact</Nav.Link>
+                  <Nav.Link href="#action1">Gallery</Nav.Link>
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">Links</NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
                       Another action
                     </NavDropdown.Item>
