@@ -1,11 +1,8 @@
-*{
-  margin: 0;
-}
 body{
-  background: rgb(red, rgb(37, 54, 37), rgb(19, 19, 44));
-}
-.navbar{
-  
-  background-color: rgb(19, 100, 44);
-  width: wh; 
+  background-image: url("../public/images/bg3.png") !important;
+  background-size: cover !important;
+  display: flex !important;
+  image-resolution: 1080px !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
 }
